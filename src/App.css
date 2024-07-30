@@ -1,0 +1,126 @@
+/* write your css here */
+/* write your css here */
+/* General styling for the app */
+*{
+    overflow-x: hidden;
+}
+.container{
+    background-color:rgb(57, 24, 88);
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.h1{
+    /* color: rgb(204, 121, 146); */
+    color: white;
+    font-size: 2.5rem;
+    text-decoration-line: underline;
+}
+.App {
+    height: fit-content;
+    /* max-height: fit-content; */
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    /* background-color: rgb(171, 163, 158); */
+    flex-wrap: wrap;
+    border-radius: 10px;
+    background-color: #AB98AA;
+  }
+  
+  input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0.5em;;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  form {
+    margin-bottom: 20px;
+  }
+  
+  /* Styling for the task list */
+  .task-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .task {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .task:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .task-title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .task-description {
+    margin-top: 10px;
+  }
+  
+  .task-timestamp {
+    font-size: 12px;
+    color: #777;
+    margin-top: 10px;
+  }
+  
+  /* Styling for completed tasks */
+  .task-completed .task-title {
+    text-decoration: line-through;
+    color: #777;
+  }
+  
+  .task-completed .task-description {
+    text-decoration: line-through;
+    color: #777;
+  }
+  
+  /* Styling for the search bar */
+  .search-bar {
+    margin-bottom: 20px;
+  }
+  
+  .search-bar input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .editDeletebtn{
+    display: flex;
+    gap: 1rem;
+  }
+
+  .taskForm{
+    font-size: 1rem;
+    margin-left: -1.2rem;
+    padding: 20px;
+  }
