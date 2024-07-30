@@ -21,6 +21,7 @@ The Todo List application is designed using React for the frontend, with the fol
    iii. Passes necessary props to TaskList, TaskForm, and SearchBar.
 
 2. TaskList.js
+<br/>
    i. Receives the list of tasks and necessary handlers as props.
    ii. Maps through the tasks and renders individual Task components.
 
