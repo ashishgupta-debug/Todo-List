@@ -14,29 +14,28 @@ The Todo List application is designed using React for the frontend, with the fol
 
 # Implementation Explanation
 ## Component Structure
-1. App.js
-   i. Manages the overall state of the application.
-   ii. Handles the creation, updating, toggling completion, deletion, and 
+### App.js
+   1. Manages the overall state of the application.
+   2. Handles the creation, updating, toggling completion, deletion, and 
        filtering of tasks.
-   iii. Passes necessary props to TaskList, TaskForm, and SearchBar.
+   3.   Passes necessary props to TaskList, TaskForm, and SearchBar
+   
+### TaskList.js
+   1. Receives the list of tasks and necessary handlers as props.
+   2. Maps through the tasks and renders individual Task components.
 
-2. TaskList.js
-<br/>
-   i. Receives the list of tasks and necessary handlers as props.
-   ii. Maps through the tasks and renders individual Task components.
-
-3. Task.js
-   i. Represents an individual task.
-   ii. Contains logic for editing, toggling completion, deleting, and 
+### Task.js
+   1.  Represents an individual task.
+   2.  Contains logic for editing, toggling completion, deleting, and 
        expanding/collapsing the task details.
+        
+### TaskForm.js
+   1. Provides a form for creating new tasks.
+   2. Calls the onCreateTask handler passed down from App.js.
 
-4. TaskForm.js
-   i. Provides a form for creating new tasks.
-   ii. Calls the onCreateTask handler passed down from App.js.
-
-5. SearchBar.js
-   i. Contains the search input and reset button.
-   ii. Updates the URL parameters and filters tasks based on the search 
+### SearchBar.js
+   1. Contains the search input and reset button.
+   2. Updates the URL parameters and filters tasks based on the search 
        query.
 
 ## Data Handling
